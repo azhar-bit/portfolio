@@ -1,181 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Azhar Shiju | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #0f4c75;
-      --accent: #3282b8;
-      --light-bg: #f5f7fa;
-      --dark-bg: #1b262c;
-      --text-light: #f5f5f5;
-      --text-dark: #1b1b1b;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: var(--light-bg);
-      color: var(--text-dark);
-    }
-
-    header {
-      height: 100vh;
-      background: linear-gradient(rgba(15, 76, 117, 0.8), rgba(15, 76, 117, 0.8)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') no-repeat center/cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 20px;
-    }
-
-    header h1 {
-      font-size: 3.5rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      max-width: 600px;
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 40px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      z-index: 999;
-    }
-
-    nav h2 {
-      margin: 0;
-      color: var(--primary);
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--primary);
-      margin-left: 20px;
-      font-weight: 500;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      color: var(--primary);
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    .about p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      text-align: center;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .project-card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-      padding: 20px;
-      transition: transform 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .project-card h3 {
-      margin-top: 0;
-      color: var(--primary);
-    }
-
-    .project-card a {
-      text-decoration: none;
-      color: var(--accent);
-    }
-
-    .contact a {
-      color: var(--primary);
-      text-decoration: none;
-      display: block;
-      margin: 10px 0;
-      text-align: center;
-    }
-
-    footer {
-      background: var(--primary);
-      color: white;
-      text-align: center;
-      padding: 30px 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <h2>Azhar Shiju</h2>
-    <div>
+
+  <!-- 🌟 Navbar -->
+  <header>
+    <h1 class="logo">Azhar<span>Shiju</span></h1>
+    <nav>
+      <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <header>
-    <h1>Azhar Shiju</h1>
-    <p>Final Year B.Tech Computer Science Student | Passionate Web & Mobile Developer</p>
+    </nav>
   </header>
 
-  <section id="about" class="about">
-    <h2 class="section-title">About Me</h2>
-    <p>I am a final-year Computer Science Engineering student with experience in Flutter, Firebase, and web technologies. I enjoy building apps that solve real-world problems, such as my Farmer-Consumer Connect App that links farmers directly with buyers.</p>
+  <!-- 🏠 Home Section -->
+  <section id="home" class="home">
+    <div class="content">
+      <h2>Hello, I'm <span>Azhar Shiju</span> 👋</h2>
+      <p>I'm a passionate developer crafting modern web and mobile experiences using <b>Flutter</b>, <b>Python</b>, and <b>AI</b>.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects">
+  <!-- 🙋 About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a full-stack developer and computer science enthusiast with experience in
+      <b>Flutter, Firebase, Python, and Machine Learning</b>. I love building meaningful apps that make a difference.
+    </p>
+  </section>
+
+  <!-- 💼 Projects -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-container">
       <div class="project-card">
-        <h3>🌾 Farmer-Consumer Connect App</h3>
-        <p>Mobile e-commerce app that allows farmers to list and sell their products directly to consumers. Features include real-time search, cart, and location-based filtering.</p>
-        <p><strong>Tech:</strong> Flutter, Firebase</p>
-        <a href="https://github.com/azhar-bit">View GitHub</a>
+        <h3>☕ Café Finder</h3>
+        <p>Find nearby cafés using OpenStreetMap and JavaScript.</p>
+        <a href="https://azhar-bit.github.io/cafe-finder/" target="_blank" class="btn">Live Demo</a>
+        <a href="https://github.com/azhar-bit/cafe-finder" target="_blank" class="btn secondary">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>🎮 Word Guess Game</h3>
+        <p>A fun Python word-guessing game with simple CLI interface.</p>
+        <a href="https://github.com/azhar-bit/word-guess-game" target="_blank" class="btn secondary">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>🚗 Smart City Tracker</h3>
+        <p>Geo-AI powered issue tracker with analytics and real-time reporting.</p>
+        <a href="#" class="btn secondary">Coming Soon</a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <div class="contact">
-      <a href="mailto:azhar182004@gmail.com">📧 azhar182004@gmail.com</a>
-      <a href="https://github.com/azhar-bit" target="_blank">💻 GitHub: azhar-bit</a>
-      <a href="https://www.linkedin.com/in/azhar-shiju-b19b1a34b" target="_blank">🔗 LinkedIn: Azhar Shiju</a>
+  <!-- 🧠 Skills -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span>Flutter</span>
+      <span>Firebase</span>
+      <span>Python</span>
+      <span>AI/ML</span>
+      <span>JavaScript</span>
+      <span>HTML & CSS</span>
+      <span>Git & GitHub</span>
     </div>
   </section>
 
+  <!-- 📬 Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Let's connect and create something amazing!</p>
+    <a href="mailto:azharsj.tech@gmail.com" class="btn">📧 Send an Email</a>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Azhar Shiju. All rights reserved.</p>
+    <p>Made with ❤️ by Azhar Shiju | © 2025</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
